@@ -9,6 +9,7 @@ const router = express.Router();
 router.get('/', shopController.getIndex);
 
 router.get('/products', shopController.getProducts);
+router.get('/products/:productId', shopController.getProduct); //Dynamic segment, look for a value
 
 router.get('/cart', shopController.getCart);
 router.get('/orders', shopController.getOrders);
